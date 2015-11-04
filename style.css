@@ -1,7 +1,6 @@
-
-
-
-
+/*
+FIRST AND LAST SECTIONS BOLDED
+*/
 
 .article-section:first-child {
 	font-weight: bold;
@@ -11,35 +10,28 @@
 	font-weight: bold;
 }
 
-
-
-.color-me-blue {
-	color: blue;
-}
-
-.make-me-larger {
-	font-size: 3em;
-}
-
-.border-me {
-	border: 1px dotted green;
-}
-
-.rounded-border-me {
-	border-radius: 4px;
-}
-
-
-
-
-
-
-
-
-
+/*
+BUTTON CLASS NAMES THAT ADD TO GUINEA PIG
+*/
 
 button {
 	display: block;
 	width: 100px;
 	margin: 20px 0;
+}
+
+.add-color {
+	color: blue;
+}
+
+.make-large {
+	font-size: 3em;
+}
+
+.add-border {
+	border: 1px dotted green;
+}
+
+.add-rounding {
+	border-radius: 4px;
 }

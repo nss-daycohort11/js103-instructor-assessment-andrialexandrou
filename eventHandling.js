@@ -1,36 +1,14 @@
-// Note: Output target is the output-target element.
-
-
-
 var outputTarget = document.getElementById("output-target");
 var guinneaPig = document.getElementById("guinea-pig");
 
-// var section = document.getElementsByClassName("article-section");
-// var sectionContent = section.innerHTML;
-// sectionContent.addEventListener("clicked", function() {
-// 	outputTarget.innerHTML = "You clicked on the " + sectionContent + " section.";
-// });
+// OUTPUT-TARGET REFLECTS SECTION USER CLICKS ON
 
-
-// When any section is clicked the output target text should be "You clicked on the {text of the section} section"
-
-// var section = document.getElementsByClassName("article-section");
-
-// section.addEventListener("click", function(e) {
-// 	console.log("event:", e.target.value);
-// });
-
-
-
-
-
-
-
-
-
-
-
-
+document.querySelector("body").addEventListener("click", function (event) {
+  if (event.target.className === "article-section") {
+  	var sectionContent = event.target.innerHTML;
+  	outputTarget.innerHTML = "You clicked on the " + sectionContent + " section.";  	
+  }
+});
 
 // OUTPUT-TARGET RESPONDS TO USER MOUSEOVER PAGE TITLE
 
@@ -49,43 +27,17 @@ pageTitle.addEventListener("mouseout", function() {
 
 var inputField = document.getElementById("keypress-input");
 inputField.addEventListener("keyup", function(e) {
-	console.log("e", e);
 	outputTarget.innerHTML = e.target.value;
 });
 
+// GUINNEA PIG CHNAGES ACCORDING TO BUTTON CLICK BY EXTRACTING THE ID AND MATCHING TO CORRESPONDING (AND IDENTICAL) CLASS NAME
 
-// When you click the "Add color" button, the guinea-pig element's text color should change to blue.
-
-var addColorButton = document.getElementById("add-color");
-addColorButton.addEventListener("click", function() {
-	console.log("guinneaPig", guinneaPig);
-	guinneaPig.setAttribute("class", "color-me-blue");
-})
+document.querySelector("body").addEventListener("click", function (event) {
+	var changeMode = event.target.id;
+	guinneaPig.className += changeMode + " ";
+});
 
 
-
-
-// When you click the "Hulkify" button, the guinea-pig element's font size should become much larger.
-
-var makeLargeButton = document.getElementById("make-large");
-makeLargeButton.addEventListener("click", function() {
-	console.log("guinnea", guinneaPig);
-	guinneaPig.setAttribute("class", "make-me-larger");
-})
-
-
-// When you click the "Capture it" button, the guinea-pig element should have a border added to it.
-
-var addBorder = document.getElementById("add-border");
-
-
-border-me
-
-// When you click the "Rounded" button, the guinea-pig element's border should become rounded.
-
-var addColorButton = document.getElementById("add-color");
-
-rounded-border-me
 
 
 
