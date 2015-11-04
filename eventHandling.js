@@ -59,7 +59,7 @@ inputField.addEventListener("keyup", function(e) {
 var addColorButton = document.getElementById("add-color");
 addColorButton.addEventListener("click", function() {
 	console.log("guinneaPig", guinneaPig);
-	guinneaPig.addAttribute(class="color-me-blue");
+	guinneaPig.setAttribute("class", "color-me-blue");
 })
 
 
@@ -70,21 +70,22 @@ addColorButton.addEventListener("click", function() {
 var makeLargeButton = document.getElementById("make-large");
 makeLargeButton.addEventListener("click", function() {
 	console.log("guinnea", guinneaPig);
-	// guinneaPig.addClass("make-me-larger");
+	guinneaPig.setAttribute("class", "make-me-larger");
 })
 
 
 // When you click the "Capture it" button, the guinea-pig element should have a border added to it.
 
-// var addColorButton = document.getElementById("add-color");
+var addBorder = document.getElementById("add-border");
 
-// border-me
+
+border-me
 
 // When you click the "Rounded" button, the guinea-pig element's border should become rounded.
 
-// var addColorButton = document.getElementById("add-color");
+var addColorButton = document.getElementById("add-color");
 
-// rounded-border-me
+rounded-border-me
 
 
 
